@@ -1,4 +1,4 @@
-import {Fragment} from 'react';
+// import {Fragment} from 'react';
 
 
 // export const FirstApp = () => {
@@ -21,11 +21,28 @@ import {Fragment} from 'react';
 //  Fragment es un componente de React que permite agrupar varios elementos sin añadir un nodo extra al DOM
 // <> es una forma abreviada de usar Fragment, y se utiliza para agrupar varios elementos sin añadir un nodo extra al DOM
 // En este caso, se utiliza para agrupar el h1 y el p
-export const FirstApp = () => {
+
+// const getResult =() =>{
+//     return 100 + 200;
+// }
+
+
+
+// const newMessage = {
+//     nombre :'Fiona',
+//     edad: '10',
+// };
+
+export const FirstApp = ({ title = 'Hola soy Fiona', subTitle}) => {
+
+
+//    console.log(props);
     return (
         <>
-            <h1>Fiona</h1>   
-            <p>Soy una gatita gris</p>
+            <h1>{title}</h1>   
+            {/* <h1>{getResult()}</h1>  */}
+            {/* <code>{ JSON.stringify(newMessage) }</code>  */}
+            <p>{subTitle + 1}</p>
         </>
-    );
+    )
 }
