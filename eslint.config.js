@@ -35,4 +35,18 @@ export default [
       ],
     },
   },
+  {
+    files: ['tests/**/*', '**/*.test.js', '**/*.spec.js'],
+    languageOptions: {
+      globals: globals.jest,
+    },
+    plugins: {
+      jest,
+    },
+    rules: {
+      ...jest.configs.recommended.rules,
+    },
+  },
+
+
 ]

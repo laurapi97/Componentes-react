@@ -24,7 +24,7 @@ export const CounterApp = ({ value  }) => {
             <h1>CounterApp</h1>
             <h2>{ counter }</h2>
         <div style={{ display: 'flex', gap: '10px' }}>
-            <button className="counterButton plusButton" onClick={ handleAdd}>+1</button>
+            <button className="counterButton  plusButton" onClick={ handleAdd}>+1</button>
             <button className="counterButton resetButton" onClick={ handleReset}>
             <FiRefreshCw className="refreshIcon" />   
             </button> {/* reset es una funcion que se ejecuta cuando se hace click en el boton, en este caso le estamos asignando el valor inicial del counter, en este caso 0 */}
